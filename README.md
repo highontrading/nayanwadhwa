@@ -49,6 +49,9 @@ did not happen.
 - **Text**: edit it directly in `index.html`. Each section is marked with a comment.
 - **Colours and fonts**: the `:root` block at the top of `styles.css`. The dark theme is
   the `:root[data-theme="dark"]` block right under it.
+- **Logo**: the `i-logo` symbol near the top of each HTML file (it draws the nav and
+  footer mark), plus `favicon.svg`. The PNG icons in `assets/img/` are renders of the
+  same shape.
 - **Social links**: the `socials` list in the contact section, plus `sameAs` in the
   structured data near the top of `index.html`.
 - **A new essay**: copy a file in `writing/`, change its text and meta tags, then add a

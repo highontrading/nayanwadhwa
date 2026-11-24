@@ -403,7 +403,7 @@ button {
 .t-quant { --c: var(--blue); }
 .t-writing { --c: var(--cream); --fg: #2b2410; }
 .t-agents { --c: var(--yellow); --fg: #2b2410; }
-.t-about { --c: var(--violet); }
+.t-attention { --c: var(--violet); }
 .t-studio { --c: var(--green); }
 .t-derive { --c: var(--red); }
 .t-contact { --c: #1b1b1b; }
@@ -458,8 +458,8 @@ button {
 }
 
 .nav__logo svg {
-  width: 19px;
-  height: 19px;
+  width: 25px;
+  height: 15px;
 }
 
 .nav__theme svg {
@@ -819,6 +819,10 @@ button {
   font-size: clamp(1.0625rem, 1.9vw, 1.25rem);
   line-height: 1.55;
   color: var(--ink-soft);
+}
+
+.about__lead + .about__lead {
+  margin-top: 1em;
 }
 
 .pull {
@@ -1510,6 +1514,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin: 0;
 }
 
+.payoff__desc + .plot {
+  margin-top: 10px;
+}
+
 .plot__canvas {
   position: relative;
 }
@@ -1672,6 +1680,49 @@ input[type="range"]:active::-webkit-slider-thumb {
   .segmented {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+/* Demo 5: retention curve */
+.segmented.segmented--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.payoff__desc b {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.chart .band {
+  fill: color-mix(in srgb, var(--violet) 16%, transparent);
+  transition: x 0.6s var(--ease), width 0.6s var(--ease);
+}
+
+.chart .curve--ghost {
+  stroke: var(--line-strong);
+}
+
+.chart .seg {
+  stroke-width: 3.2;
+  opacity: 0;
+  transition: opacity 0.45s var(--ease);
+}
+
+.chart .seg.is-on {
+  opacity: 1;
+}
+
+.plot__tag--y {
+  right: 2.5%;
+  left: auto;
+  font-weight: 500;
+  color: var(--muted);
+  translate: 0 -135%;
+}
+
+.demo__note {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: var(--muted);
 }
 
 /* 9. Writing -------------------------------------------------------------- */
@@ -2072,8 +2123,8 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 
 .footer__brand svg {
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 18px;
 }
 
 .footer__links {

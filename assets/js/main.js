@@ -466,6 +466,37 @@
     draw(shown);
   }
 
+  /* Demo 5: anatomy of a high-retention video ------------------------------ */
+
+  function initRetention() {
+    const box = $('[data-retention]');
+    if (!box) return;
+    const band = $('[data-band]', box);
+    const desc = $('[data-retention-desc]', box);
+    const buttons = $$('[data-phase]', box);
+    const segments = $$('[data-seg]', box);
+
+    // x and width are in the chart's own units and line up with the curve segments
+    const phases = {
+      hook: { x: 8, width: 38, when: '0–3 sec.', text: 'Pattern interrupt. Visual contrast. Immediate value proposition.' },
+      payoff: { x: 46, width: 212, when: 'Middle.', text: 'Deliver on the promise. Maintain pacing. Strategic loops.' },
+      cta: { x: 258, width: 54, when: 'End.', text: 'Clear next step. Algorithmic signal. Retention anchor.' },
+    };
+
+    const select = (key) => {
+      const phase = phases[key];
+      band.style.x = `${phase.x}px`;
+      band.style.width = `${phase.width}px`;
+      segments.forEach((s) => s.classList.toggle('is-on', s.dataset.seg === key));
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.phase === key)));
+      const when = document.createElement('b');
+      when.textContent = phase.when;
+      desc.replaceChildren(when, ` ${phase.text}`);
+    };
+
+    buttons.forEach((b) => b.addEventListener('click', () => select(b.dataset.phase)));
+  }
+
   /* Contact form ---------------------------------------------------------- */
 
   function initForm() {
@@ -520,7 +551,7 @@
   }
 
   const start = () => {
-    [initTheme, initNav, initReveal, initRotator, initParallax, initGraph, initStudio, initPricer, initPayoff, initForm, initMisc]
+    [initTheme, initNav, initReveal, initRotator, initParallax, initRetention, initGraph, initStudio, initPricer, initPayoff, initForm, initMisc]
       .forEach((init) => {
         try {
           init();
