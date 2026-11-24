@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nayan Wadhwa, CFA | Quant researcher and founder of Ideabro AI</title>
+  <meta name="description" content="Nayan Wadhwa, CFA. Pricing derivatives by day, building AI agents by night. Quantitative researcher and founder of Ideabro AI and Ideabro Studio, based in Delhi / Gurugram, India.">
+  <meta name="author" content="Nayan Wadhwa">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="canonical" href="https://nayanwadhwa.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nayan Wadhwa">
+  <meta property="og:title" content="Nayan Wadhwa, CFA | Quant researcher and founder of Ideabro AI">
+  <meta property="og:description" content="Pricing derivatives by day, building AI agents by night.">
+  <meta property="og:url" content="https://nayanwadhwa.com/">
+  <meta property="og:image" content="https://nayanwadhwa.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Meet Nayan: a stippled marble head, open at the top, with colourful icons floating out of it.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@thenayanwadhwa">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script>
+    (function (d) {
+      var r = d.documentElement;
+      r.classList.add('js');
+      try {
+        var t = localStorage.getItem('nw-theme');
+        if (t === 'dark' || t === 'light') r.setAttribute('data-theme', t);
+      } catch (e) {}
+      // If the main script never arrives, show everything anyway.
+      setTimeout(function () {
+        if (!r.classList.contains('is-ready')) r.classList.add('is-ready', 'no-motion');
+      }, 3000);
+    })(document);
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://nayanwadhwa.com/#nayan",
+        "name": "Nayan Wadhwa",
+        "honorificSuffix": "CFA",
+        "url": "https://nayanwadhwa.com/",
+        "jobTitle": "Quantitative Researcher and Founder, Ideabro AI",
+        "description": "Quantitative researcher specialising in options pricing and derivatives trading, and founder of Ideabro AI and Ideabro Studio.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Delhi / Gurugram", "addressCountry": "IN" },
+        "worksFor": { "@type": "Organization", "name": "Ideabro AI", "url": "https://ideabro.ai" },
+        "knowsAbout": ["Quantitative research", "Options pricing", "Derivatives trading", "Implied volatility surfaces", "Agentic AI", "Multi-agent systems", "Generative AI"],
+        "sameAs": [
+          "https://www.linkedin.com/in/nayanwadhwa/",
+          "https://x.com/thenayanwadhwa",
+          "https://github.com/thenayanwadhwa",
+          "https://www.youtube.com/@thenayanwadhwa",
+          "https://www.instagram.com/thenayanwadhwa",
+          "https://www.threads.net/@thenayanwadhwa"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nayanwadhwa.com/#site",
+        "url": "https://nayanwadhwa.com/",
+        "name": "Nayan Wadhwa",
+        "author": { "@id": "https://nayanwadhwa.com/#nayan" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-logo" viewBox="120 126 272 240"><path fill="currentColor" d="M140 350V205c0-53 55-63 116-63s116 10 116 63v145h-76V205c0-17-18-25-40-25s-40 8-40 25v145z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-out" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a7 7 0 0 0 10.7 10.7z"/></symbol>
+    <symbol id="t-quant" viewBox="0 0 24 24"><circle cx="10.5" cy="13.5" r="5.5"/><path d="M10.5 8H20"/></symbol>
+    <symbol id="t-writing" viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h8"/></symbol>
+    <symbol id="t-agents" viewBox="0 0 24 24"><path d="M10.2 10.3 6.9 7.3M13.8 10.3l3.3-3M10.2 13.7l-3.3 3M13.8 13.7l3.3 3"/><circle cx="12" cy="12" r="2.5"/><circle cx="5.5" cy="6" r="1.9"/><circle cx="18.5" cy="6" r="1.9"/><circle cx="5.5" cy="18" r="1.9"/><circle cx="18.5" cy="18" r="1.9"/></symbol>
+    <symbol id="t-about" viewBox="0 0 24 24"><path d="M12 4.5 20 19H4z"/></symbol>
+    <symbol id="t-studio" viewBox="0 0 24 24"><path class="fill" d="M11 3.5 13 9l5.5 2L13 13l-2 5.5L9 13l-5.5-2L9 9zM18.5 15l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9z"/></symbol>
+    <symbol id="t-derive" viewBox="0 0 24 24"><path class="fill" d="M9 6.2v11.6a.8.8 0 0 0 1.2.7l9.3-5.8a.8.8 0 0 0 0-1.4l-9.3-5.8a.8.8 0 0 0-1.2.7z"/></symbol>
+    <symbol id="t-contact" viewBox="0 0 24 24"><path d="M20.5 3.5 13.6 20.3l-3.2-6.7-6.7-3.2zM10.4 13.6l10.1-10.1"/></symbol>
+    <symbol id="s-linkedin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></g></symbol>
+    <symbol id="s-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></symbol>
+    <symbol id="s-github" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></g></symbol>
+    <symbol id="s-youtube" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></g></symbol>
+    <symbol id="s-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></g></symbol>
+    <symbol id="s-threads" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/></g></symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <nav class="nav__pill" aria-label="Primary">
+      <a class="nav__logo" href="#top" aria-label="Nayan Wadhwa, back to top">
+        <svg aria-hidden="true"><use href="#i-logo"/></svg>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav__thumb" aria-hidden="true"></li>
+      </ul>
+      <button class="nav__theme" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme">
+        <svg class="i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <p class="hero__status" data-enter style="--i:0"><span class="dot" aria-hidden="true"></span>Open to AI agency &amp; quant consulting work</p>
+
+      <h1 class="hero__title">
+        <span data-enter style="--i:1">Meet</span>
+        <span data-enter style="--i:2">Nayan<span class="sr-only"> Wadhwa, CFA</span>,</span>
+      </h1>
+
+      <div class="hero__sub" data-enter style="--i:3">
+        <p class="sr-only">Pricing derivatives by day, building AI agents by night. Quant researcher, CFA charterholder and founder of Ideabro AI.</p>
+        <div class="rotator" data-rotator aria-hidden="true">
+          <span class="rotator__item is-active">pricing derivatives by day, building AI agents by night.</span>
+          <span class="rotator__item">quant researcher, CFA charterholder and founder of Ideabro AI.</span>
+          <span class="rotator__item">at the intersection of quantitative derivatives trading and agentic AI.</span>
+        </div>
+      </div>
+
+      <div class="hero__cta" data-enter style="--i:4">
+        <a class="btn btn--primary" href="#contact">Let’s collaborate <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--quiet" href="#work">See the work</a>
+      </div>
+
+      <div class="mind" data-mind>
+        <div class="mind__stage">
+          <img class="mind__head mind__head--light" src="assets/img/head-light-500.webp"
+               srcset="assets/img/head-light-500.webp 500w, assets/img/head-light-1000.webp 1000w"
+               sizes="(min-width: 760px) 440px, 68vw" width="1000" height="1150"
+               alt="A stippled classical marble head, open at the top, with ideas floating out of it."
+               fetchpriority="high" decoding="async" draggable="false">
+          <img class="mind__head mind__head--dark" src="assets/img/head-dark-500.webp"
+               srcset="assets/img/head-dark-500.webp 500w, assets/img/head-dark-1000.webp 1000w"
+               sizes="(min-width: 760px) 440px, 68vw" width="1000" height="1150"
+               alt="A stippled classical marble head, open at the top, with ideas floating out of it."
+               loading="lazy" decoding="async" draggable="false">
+
+          <ul aria-label="What’s on Nayan’s mind">
+            <li class="slot" style="--x:12;--y:38;--xm:7;--ym:33;--depth:1.3">
+              <a class="tile" href="#pricing-engine" style="--r:-14deg;--i:0;--dur:6.2s">
+                <span class="tile__face t-quant"><svg aria-hidden="true"><use href="#t-quant"/></svg></span>
+                <span class="tile__tip">Quant Pricing Engine</span>
+              </a>
+            </li>
+            <li class="slot" style="--x:24;--y:14;--xm:18;--ym:15;--depth:0.85">
+              <a class="tile" href="#writing" style="--r:-8deg;--i:1;--dur:7.1s;--delay:-2s">
+                <span class="tile__face t-writing"><svg aria-hidden="true"><use href="#t-writing"/></svg></span>
+                <span class="tile__tip">Writing</span>
+              </a>
+            </li>
+            <li class="slot" style="--x:37.5;--y:17.5;--xm:31;--ym:31.5;--depth:0.5">
+              <a class="tile" href="#ideabro-ai" style="--r:-7deg;--i:2;--dur:5.6s;--delay:-1s">
+                <span class="tile__face t-agents"><svg aria-hidden="true"><use href="#t-agents"/></svg></span>
+                <span class="tile__tip">Ideabro AI</span>
+              </a>
+            </li>
+            <li class="slot" style="--x:50.5;--y:13.5;--xm:50;--ym:29.5;--depth:0.35">
+              <a class="tile" href="#about" style="--r:4deg;--i:3;--dur:6.8s;--delay:-3s">
+                <span class="tile__face t-about"><svg aria-hidden="true"><use href="#t-about"/></svg></span>
+                <span class="tile__tip">About Nayan</span>
+              </a>
+            </li>
+            <li class="slot" style="--x:63.5;--y:17.5;--xm:69;--ym:31.5;--depth:0.5">
+              <a class="tile" href="#ideabro-studio" style="--r:9deg;--i:4;--dur:5.9s;--delay:-4s">
+                <span class="tile__face t-studio"><svg aria-hidden="true"><use href="#t-studio"/></svg></span>
+                <span class="tile__tip">Ideabro Studio</span>
+              </a>
+            </li>
+            <li class="slot" style="--x:77;--y:12;--xm:82;--ym:13.5;--depth:0.85">
+              <a class="tile" href="#derive-trading" style="--r:8deg;--i:5;--dur:7.4s;--delay:-1.5s">
+                <span class="tile__face t-derive"><svg aria-hidden="true"><use href="#t-derive"/></svg></span>
+                <span class="tile__tip">Derive Trading</span>
+              </a>
+            </li>
+            <li class="slot" style="--x:89.5;--y:35;--xm:93;--ym:31;--depth:1.3">
+              <a class="tile" href="#contact" style="--r:13deg;--i:6;--dur:6.5s;--delay:-2.5s">
+                <span class="tile__face t-contact"><svg aria-hidden="true"><use href="#t-contact"/></svg></span>
+                <span class="tile__tip">Say hello</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Options pricing</span><i></i><span>Volatility surfaces</span><i></i><span>Hedging Greeks</span><i></i><span>Black-Scholes</span><i></i><span>Binomial trees</span><i></i><span>Multi-agent systems</span><i></i><span>LangGraph</span><i></i><span>LLM routing</span><i></i><span>Diffusion pipelines</span><i></i><span>Custom LoRA</span><i></i><span>Volatility arbitrage</span><i></i><span>Python</span><i></i>
+      </div>
+      <div class="marquee__track" aria-hidden="true">
+        <span>Options pricing</span><i></i><span>Volatility surfaces</span><i></i><span>Hedging Greeks</span><i></i><span>Black-Scholes</span><i></i><span>Binomial trees</span><i></i><span>Multi-agent systems</span><i></i><span>LangGraph</span><i></i><span>LLM routing</span><i></i><span>Diffusion pipelines</span><i></i><span>Custom LoRA</span><i></i><span>Volatility arbitrage</span><i></i><span>Python</span><i></i>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap about__grid">
+        <div class="about__intro" data-reveal>
+          <p class="eyebrow">About</p>
+          <h2 class="display" id="about-title">At the intersection of quantitative derivatives trading and agentic AI.</h2>
+        </div>
+
+        <div data-reveal style="--i:1">
+          <p class="about__lead">I specialize in quantitative research, options pricing modeling, and mid-frequency derivatives trading metrics. Through Ideabro AI and Ideabro Studio, I construct autonomous multi-agent software networks and high-fidelity DTC fashion ad generation pipelines.</p>
+
+          <blockquote class="pull">
+            <p>“On the surface, pricing an exotic barrier option and routing a call query to a specific LLM agent seem like entirely distinct disciplines. In reality, both fields share an identical foundation: probability theory, optimization under constraints, and statistical verification.”</p>
+            <footer>From <a class="link" href="writing/quant-ai-convergence.html">Financial Engineering Meets Applied AI <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></footer>
+          </blockquote>
+
+          <dl class="facts">
+            <div><dt>Based in</dt><dd>Delhi / Gurugram, India</dd></div>
+            <div><dt>Credential</dt><dd>CFA charterholder</dd></div>
+            <div><dt>Research</dt><dd>Options pricing &amp; derivatives trading</dd></div>
+            <div><dt>Ventures</dt><dd>Ideabro AI &amp; Ideabro Studio</dd></div>
+            <div><dt>Teaching</dt><dd>Derive Trading on YouTube</dd></div>
+            <div><dt>Status</dt><dd><span class="dot" aria-hidden="true"></span>Open to AI agency &amp; quant consulting</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="wrap duo">
+        <article class="duo__card" data-reveal>
+          <p class="duo__when"><svg aria-hidden="true"><use href="#i-sun"/></svg>By day</p>
+          <h3>Pricing derivatives</h3>
+          <p>Quantitative research, options pricing models and mid-frequency derivatives trading metrics. Black-Scholes and binomial lattices, implied volatility surfaces, dynamic hedging Greeks.</p>
+          <ul class="chips" aria-label="Topics">
+            <li>Options pricing</li><li>Volatility surfaces</li><li>Hedging Greeks</li><li>Binomial trees</li>
+          </ul>
+        </article>
+        <article class="duo__card duo__card--night" data-reveal style="--i:1">
+          <p class="duo__when"><svg aria-hidden="true"><use href="#i-moon"/></svg>By night</p>
+          <h3>Building AI agents</h3>
+          <p>Autonomous multi-agent software networks at Ideabro AI, and high-fidelity DTC fashion ad generation pipelines at Ideabro Studio.</p>
+          <ul class="chips" aria-label="Topics">
+            <li>Agentic workflows</li><li>LangGraph / LangChain</li><li>SDXL / FLUX</li><li>Custom LoRA styling</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Work</p>
+          <h2 class="display" id="work-title">An agency, a studio, a pricing engine and a classroom.</h2>
+          <p class="section__lede">Four projects, each with a small interactive sketch of how it works.</p>
+        </header>
+
+        <div class="projects">
+          <!-- Ideabro AI -->
+          <article class="project" id="ideabro-ai" data-reveal>
+            <div class="project__info">
+              <p class="project__meta"><span class="tile__face t-agents"><svg aria-hidden="true"><use href="#t-agents"/></svg></span><span><b>AI agent agency</b>Active</span></p>
+              <h3>Ideabro AI</h3>
+              <p class="project__text">Ideabro AI builds multi-agent workflow systems, custom LLM routing architectures, and scalable business automations. By linking domain-expert agents with secure database wrappers and custom memory engines, we decouple professional labor constraints and design bulletproof enterprise integrations.</p>
+              <ul class="chips" aria-label="Focus areas">
+                <li>Agentic Workflows</li><li>LangGraph / LangChain</li><li>Enterprise Automations</li><li>B2B SaaS Dev</li>
+              </ul>
+              <dl class="specs">
+                <div><dt>Automation scope</dt><dd>End-to-end enterprise</dd></div>
+                <div><dt>Agent coordination</dt><dd>Graph-based routing</dd></div>
+                <div><dt>Deployment stacks</dt><dd>Secure cloud middleware</dd></div>
+              </dl>
+              <p class="project__cta"><a class="btn btn--primary" href="https://ideabro.ai" target="_blank" rel="noopener">Visit ideabro.ai <svg class="i-out" aria-hidden="true"><use href="#i-out"/></svg></a></p>
+            </div>
+
+            <div class="demo" data-graph>
+              <div class="demo__bar"><b>Agent graph</b><span>State-driven routing, simulated</span></div>
+              <div class="demo__body">
+                <ol class="steps is-static">
+                  <li class="step" data-name="User Intent Router"><span class="step__n">01</span><div><b>User Intent Router</b><p><span>Extracting semantic tokens and intent models using high-throughput routers.</span></p></div></li>
+                  <li class="step" data-name="Context Refiner"><span class="step__n">02</span><div><b>Context Refiner</b><p><span>Injecting custom internal agent memory arrays and past conversation historical files.</span></p></div></li>
+                  <li class="step" data-name="SaaS Execution Node"><span class="step__n">03</span><div><b>SaaS Execution Node</b><p><span>Querying B2B database endpoints and orchestrating client workflow integrations.</span></p></div></li>
+                  <li class="step" data-name="Output Guardrail"><span class="step__n">04</span><div><b>Output Guardrail</b><p><span>Running deterministic validation loops and checking formats against strict schemas.</span></p></div></li>
+                  <li class="step" data-name="Success Handshake"><span class="step__n">05</span><div><b>Success Handshake</b><p><span>Delivering fully compiled outputs back to the central enterprise server.</span></p></div></li>
+                </ol>
+              </div>
+              <div class="demo__foot">
+                <span data-graph-status>Workflow ready</span>
+                <button class="btn btn--quiet btn--small" type="button" data-graph-run>Run the graph</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Ideabro Studio -->
+          <article class="project" id="ideabro-studio" data-reveal>
+            <div class="project__info">
+              <p class="project__meta"><span class="tile__face t-studio"><svg aria-hidden="true"><use href="#t-studio"/></svg></span><span><b>Generative visual studio</b>Active</span></p>
+              <h3>Ideabro Studio</h3>
+              <p class="project__text">Ideabro Studio is a subsidiary of Ideabro AI, delivering commercial-grade, model-led visual campaigns for apparel, jewelry, and luxury retail brands. Using custom-trained diffusion check-points, hyper-controlled Pose/Style adapters, and upscale loops, we generate magazine-ready art assets at a fraction of standard studio overhead.</p>
+              <ul class="chips" aria-label="Focus areas">
+                <li>SDXL / FLUX Integration</li><li>Custom LoRA Styling</li><li>Ad Creative Pipelines</li><li>Fashion Tech</li>
+              </ul>
+              <dl class="specs">
+                <div><dt>Image generation mode</dt><dd>Controllable LoRA</dd></div>
+                <div><dt>Creative outputs</dt><dd>DTC apparel &amp; ad campaigns</dd></div>
+                <div><dt>Upscale / detailing</dt><dd>4K high-fidelity render</dd></div>
+              </dl>
+            </div>
+
+            <div class="demo" data-studio>
+              <div class="demo__bar"><b>From brief to asset</b><span>Pipeline walkthrough</span></div>
+              <div class="demo__body">
+                <p class="brief"><small>Example brief</small><span data-brief>Premium linen summer jacket worn by a male model on a New Delhi sunset terrace</span><span class="caret" aria-hidden="true"></span></p>
+                <ul class="params" aria-label="Render settings">
+                  <li>Steps <b>20</b></li><li>CFG scale <b>7.5</b></li><li>Ratio <b>3:4</b></li>
+                </ul>
+                <ol class="pipe" aria-label="Pipeline stages">
+                  <li><i></i><span>Synthesizing latents</span></li>
+                  <li><i></i><span>Rendering diffusion pass</span></li>
+                  <li><i></i><span>Upscaling styling adapters</span></li>
+                  <li><i></i><span>Running color correction</span></li>
+                </ol>
+              </div>
+            </div>
+          </article>
+
+          <!-- Quant Pricing Engine -->
+          <article class="project" id="pricing-engine" data-reveal>
+            <div class="project__info">
+              <p class="project__meta"><span class="tile__face t-quant"><svg aria-hidden="true"><use href="#t-quant"/></svg></span><span><b>Option modeling research</b>2026</span></p>
+              <h3>Quant Pricing Engine</h3>
+              <p class="project__text">An interactive, client-side quantitative finance calculator demonstrating options modeling via Black-Scholes formulas and Binomial Lattice projections. Computes instantaneous option prices, dynamic hedging Greeks (Delta, Gamma, Vega, Theta), and interpolates historical implied volatility skews.</p>
+              <ul class="chips" aria-label="Focus areas">
+                <li>Options Hedging Greeks</li><li>Black-Scholes Simulator</li><li>Implied Vol Surfaces</li><li>Binomial Trees</li>
+              </ul>
+              <dl class="specs">
+                <div><dt>Option categories</dt><dd>Vanilla European / American</dd></div>
+                <div><dt>Greek precision</dt><dd>Analytical partial derivatives</dd></div>
+                <div><dt>Calculation framework</dt><dd>Pure client-side math</dd></div>
+              </dl>
+            </div>
+
+            <div class="demo" data-pricer>
+              <div class="demo__bar"><b>Black-Scholes pricer</b><span>European option, live</span></div>
+              <div class="demo__body pricer">
+                <div class="quotes">
+                  <div class="quote"><span>Call premium</span><strong data-out="call">$8.5163</strong></div>
+                  <div class="quote quote--put"><span>Put premium</span><strong data-out="put">$5.5608</strong></div>
+                </div>
+
+                <figure class="plot">
+                  <svg class="chart" viewBox="0 0 320 116" role="img" aria-label="Call and put value plotted against the spot price">
+                  <line class="axis" x1="8" y1="110" x2="312" y2="110"/>
+                  <line class="grid" data-k-line x1="160" y1="10" x2="160" y2="110"/>
+                  <line class="spot" data-s-line x1="160" y1="10" x2="160" y2="110"/>
+                  <path class="curve curve--put" data-put-curve d=""/>
+                  <path class="curve" data-call-curve d=""/>
+                  <circle class="knob knob--put" data-put-knob cx="160" cy="110" r="4"/>
+                  <circle class="knob" data-call-knob cx="160" cy="110" r="4"/>
+                  </svg>
+                  <figcaption class="plot__axis"><span>$50</span><span data-k-label>Strike $100</span><span>$150</span></figcaption>
+                </figure>
+
+                <div class="fields">
+                  <label class="field"><span>Stock price <i>S</i></span><output data-val="S">$100</output>
+                    <input type="range" data-in="S" min="50" max="150" step="1" value="100"></label>
+                  <label class="field"><span>Strike <i>K</i></span><output data-val="K">$100</output>
+                    <input type="range" data-in="K" min="50" max="150" step="1" value="100"></label>
+                  <label class="field"><span>Implied vol <i>σ</i></span><output data-val="v">25%</output>
+                    <input type="range" data-in="v" min="5" max="90" step="1" value="25"></label>
+                  <label class="field"><span>Years to expiry <i>T</i></span><output data-val="T">0.50</output>
+                    <input type="range" data-in="T" min="0.05" max="2" step="0.05" value="0.5"></label>
+                  <label class="field"><span>Risk-free rate <i>r</i></span><output data-val="r">6.0%</output>
+                    <input type="range" data-in="r" min="0" max="12" step="0.5" value="6"></label>
+                </div>
+
+                <dl class="greeks">
+                  <div><dt>Delta (call)</dt><dd data-out="dCall">0.6018</dd></div>
+                  <div><dt>Delta (put)</dt><dd data-out="dPut">−0.3982</dd></div>
+                  <div><dt>Gamma</dt><dd data-out="gamma">0.0218</dd></div>
+                  <div><dt>Vega</dt><dd data-out="vega">27.2854</dd></div>
+                  <div><dt>Theta (call) / day</dt><dd data-out="tCall">−0.0272</dd></div>
+                  <div><dt>Theta (put) / day</dt><dd data-out="tPut">−0.0112</dd></div>
+                </dl>
+              </div>
+            </div>
+          </article>
+
+          <!-- Derive Trading -->
+          <article class="project" id="derive-trading" data-reveal>
+            <div class="project__info">
+              <p class="project__meta"><span class="tile__face t-derive"><svg aria-hidden="true"><use href="#t-derive"/></svg></span><span><b>Educational channel</b>Active</span></p>
+              <h3>Derive Trading</h3>
+              <p class="project__text">Derive Trading is my educational channel focused on quantitative options theory, premium writing strategies, risk controls, and market mechanics. It covers everything from basic credit spreads and iron condors up to multi-leg volatility arbitrage and option mathematical backtests.</p>
+              <ul class="chips" aria-label="Focus areas">
+                <li>Options Theory</li><li>Volatility Arbitrage</li><li>Python Finance Tools</li><li>Video Explainers</li>
+              </ul>
+              <dl class="specs">
+                <div><dt>Core focus</dt><dd>Advanced options strategies</dd></div>
+                <div><dt>Video coverage</dt><dd>Step-by-step option Greeks</dd></div>
+                <div><dt>Explainer models</dt><dd>Interactive trading sheets</dd></div>
+              </dl>
+              <p class="project__cta"><a class="btn btn--primary" href="https://www.youtube.com/@thenayanwadhwa" target="_blank" rel="noopener">Watch on YouTube <svg class="i-out" aria-hidden="true"><use href="#i-out"/></svg></a></p>
+            </div>
+
+            <div class="demo" data-payoff>
+              <div class="demo__bar"><b>Strategy payoffs</b><span>Profit and loss at expiry</span></div>
+              <div class="demo__body">
+                <div class="segmented" role="group" aria-label="Options strategy">
+                  <button type="button" data-strategy="long-call" aria-pressed="true">Long call</button>
+                  <button type="button" data-strategy="short-put" aria-pressed="false">Short put</button>
+                  <button type="button" data-strategy="bull-call" aria-pressed="false">Bull call spread</button>
+                  <button type="button" data-strategy="iron-condor" aria-pressed="false">Iron condor</button>
+                </div>
+                <p class="payoff__desc" id="payoff-desc" data-payoff-desc aria-live="polite">Purchase of a call option betting on high bullish momentum.</p>
+                <figure class="plot">
+                  <div class="plot__canvas">
+                  <svg class="chart" viewBox="0 0 320 190" role="img" aria-labelledby="payoff-desc">
+                  <defs>
+                    <clipPath id="clip-profit"><rect x="0" y="0" width="320" height="95"/></clipPath>
+                    <clipPath id="clip-loss"><rect x="0" y="95" width="320" height="101"/></clipPath>
+                  </defs>
+                  <line class="grid" x1="160" y1="12" x2="160" y2="178"/>
+                  <path class="area--profit" clip-path="url(#clip-profit)" data-area d="M8 111L160 111L312 15L312 95L8 95Z"/>
+                  <path class="area--loss" clip-path="url(#clip-loss)" data-area d="M8 111L160 111L312 15L312 95L8 95Z"/>
+                  <line class="zero" x1="8" y1="95" x2="312" y2="95"/>
+                  <path class="curve" data-line d="M8 111L160 111L312 15"/>
+                  </svg>
+                  <span class="plot__tag plot__tag--profit" aria-hidden="true">Profit</span>
+                  <span class="plot__tag plot__tag--loss" aria-hidden="true">Loss</span>
+                  </div>
+                  <figcaption class="plot__axis"><span>$70</span><span>Underlying at $100</span><span>$130</span></figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Writing -->
+    <section class="section" id="writing" aria-labelledby="writing-title">
+      <div class="wrap">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Writing</p>
+          <h2 class="display" id="writing-title">Notes from both desks.</h2>
+          <p class="section__lede">Essays on volatility, agent design, and the place where the two meet.</p>
+        </header>
+
+        <div class="posts">
+          <article class="post" data-reveal>
+            <p class="post__meta"><b>Quantitative Finance</b><time datetime="2026-05-20">May 20, 2026</time><span>5 min read</span></p>
+            <div>
+              <h3><a href="writing/derivatives-vol-surface.html">Understanding Implied Volatility Surfaces &amp; Smile Curvatures</a></h3>
+              <p>Exploring why the post-1987 crash implied volatility skew persists in equity markets and how to calibrate analytic models to the options market.</p>
+            </div>
+            <span class="post__go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+          </article>
+          <article class="post" data-reveal style="--i:1">
+            <p class="post__meta"><b>Applied AI</b><time datetime="2026-04-18">April 18, 2026</time><span>4 min read</span></p>
+            <div>
+              <h3><a href="writing/agentic-ai-operations.html">Designing Multi-Agent Networks for Enterprise Workflow Automation</a></h3>
+              <p>How Ideabro AI constructs resilient, state-driven agent networks with robust verification loops to handle unstructured business processes.</p>
+            </div>
+            <span class="post__go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+          </article>
+          <article class="post" data-reveal style="--i:2">
+            <p class="post__meta"><b>Intersections</b><time datetime="2026-03-15">March 15, 2026</time><span>3 min read</span></p>
+            <div>
+              <h3><a href="writing/quant-ai-convergence.html">Financial Engineering Meets Applied AI: The Modern Stack</a></h3>
+              <p>Why the rigorous mathematical mindset of quantitative derivatives and options modeling translates perfectly to engineering high-precision AI agents.</p>
+            </div>
+            <span class="post__go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick answers -->
+    <section class="section" id="answers" aria-labelledby="answers-title" style="padding-top:0">
+      <div class="wrap">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Quick answers</p>
+          <h2 class="display" id="answers-title">Asked often.</h2>
+        </header>
+
+        <div class="faq" data-reveal>
+          <details name="faq" open>
+            <summary>Are you open to AI or options consulting?<i aria-hidden="true"></i></summary>
+            <div class="faq__body">
+              <p>Yes. I’m available for selective AI agency clients, custom SaaS automation projects, and options trading consulting. I run Ideabro AI and Ideabro Studio from Delhi / Gurugram, India. <a class="link" href="#contact">Send me a note</a> and we can take it from there.</p>
+            </div>
+          </details>
+          <details name="faq">
+            <summary>What does Ideabro AI do?<i aria-hidden="true"></i></summary>
+            <div class="faq__body">
+              <p>Ideabro AI builds multi-agent workflow systems, custom LLM routing architectures, and scalable business automations for enterprises. Ideabro Studio is its subsidiary, delivering model-led visual campaigns for apparel, jewelry, and luxury retail brands.</p>
+            </div>
+          </details>
+          <details name="faq">
+            <summary>How do your derivatives pricing models work?<i aria-hidden="true"></i></summary>
+            <div class="faq__body">
+              <p>The Quant Pricing Engine models options with Black-Scholes formulas and binomial lattice projections. It computes option prices and the dynamic hedging Greeks (Delta, Gamma, Vega, Theta), and interpolates implied volatility skews. You can <a class="link" href="#pricing-engine">try the Black-Scholes pricer</a> on this page.</p>
+            </div>
+          </details>
+          <details name="faq">
+            <summary>What is the Derive Trading YouTube channel?<i aria-hidden="true"></i></summary>
+            <div class="faq__body">
+              <p>My educational channel on quantitative options theory, premium writing strategies, risk controls, and market mechanics. It runs from basic credit spreads and iron condors up to multi-leg volatility arbitrage and backtests.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title" style="padding-top:0">
+      <div class="wrap">
+        <div class="contact__card" data-reveal>
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 class="display" id="contact-title">Let’s collaborate.</h2>
+            <p class="contact__lede">Quantitative research and modeling, AI agency and automation work, options strategy tutoring, or a general consulting engagement. Tell me what you’re working on.</p>
+            <ul class="socials" aria-label="Elsewhere">
+              <li><a href="https://www.linkedin.com/in/nayanwadhwa/" target="_blank" rel="me noopener"><svg aria-hidden="true"><use href="#s-linkedin"/></svg>LinkedIn</a></li>
+              <li><a href="https://x.com/thenayanwadhwa" target="_blank" rel="me noopener"><svg aria-hidden="true"><use href="#s-x"/></svg>X</a></li>
+              <li><a href="https://github.com/thenayanwadhwa" target="_blank" rel="me noopener"><svg aria-hidden="true"><use href="#s-github"/></svg>GitHub</a></li>
+              <li><a href="https://www.youtube.com/@thenayanwadhwa" target="_blank" rel="me noopener"><svg aria-hidden="true"><use href="#s-youtube"/></svg>YouTube</a></li>
+              <li><a href="https://www.instagram.com/thenayanwadhwa" target="_blank" rel="me noopener"><svg aria-hidden="true"><use href="#s-instagram"/></svg>Instagram</a></li>
+              <li><a href="https://www.threads.net/@thenayanwadhwa" target="_blank" rel="me noopener"><svg aria-hidden="true"><use href="#s-threads"/></svg>Threads</a></li>
+            </ul>
+          </div>
+
+          <!-- Works out of the box on Netlify (Forms). On another host, point `action` at your form endpoint. -->
+          <form class="form" name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" data-form>
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hp" aria-hidden="true"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <div class="form__row">
+              <label>Your name
+                <input type="text" name="name" autocomplete="name" required placeholder="Margaret Hamilton">
+              </label>
+              <label>Your email
+                <input type="email" name="email" autocomplete="email" inputmode="email" required placeholder="you@company.com">
+              </label>
+            </div>
+            <label>Collaboration idea or inquiry
+              <textarea name="message" required placeholder="What are you working on?"></textarea>
+            </label>
+            <div class="form__foot">
+              <button class="btn btn--primary" type="submit">Send message <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <a class="footer__brand" href="#top"><svg aria-hidden="true"><use href="#i-logo"/></svg>Nayan Wadhwa</a>
+        <ul class="footer__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#top">Back to top</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Nayan Wadhwa. Delhi / Gurugram, India.</p>
+        <p>Artwork from <a href="https://www.artic.edu/artworks/262" target="_blank" rel="noopener">Portrait Head of a Youth</a>, Roman, 1st century. Art Institute of Chicago, public domain.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

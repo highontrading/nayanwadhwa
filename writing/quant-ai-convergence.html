@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Financial Engineering Meets Applied AI: The Modern Stack | Nayan Wadhwa</title>
+  <meta name="description" content="Why the rigorous mathematical mindset of quantitative derivatives and options modeling translates perfectly to engineering high-precision AI agents.">
+  <meta name="author" content="Nayan Wadhwa">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="canonical" href="https://nayanwadhwa.com/writing/quant-ai-convergence.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Nayan Wadhwa">
+  <meta property="og:title" content="Financial Engineering Meets Applied AI: The Modern Stack">
+  <meta property="og:description" content="Why the rigorous mathematical mindset of quantitative derivatives and options modeling translates perfectly to engineering high-precision AI agents.">
+  <meta property="og:url" content="https://nayanwadhwa.com/writing/quant-ai-convergence.html">
+  <meta property="og:image" content="https://nayanwadhwa.com/assets/img/og-image.png">
+  <meta property="article:published_time" content="2026-03-15">
+  <meta property="article:author" content="Nayan Wadhwa">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@thenayanwadhwa">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preload" href="../assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script>
+    (function (d) {
+      var r = d.documentElement;
+      r.classList.add('js');
+      try {
+        var t = localStorage.getItem('nw-theme');
+        if (t === 'dark' || t === 'light') r.setAttribute('data-theme', t);
+      } catch (e) {}
+      setTimeout(function () {
+        if (!r.classList.contains('is-ready')) r.classList.add('is-ready', 'no-motion');
+      }, 3000);
+    })(document);
+  </script>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Financial Engineering Meets Applied AI: The Modern Stack",
+    "description": "Why the rigorous mathematical mindset of quantitative derivatives and options modeling translates perfectly to engineering high-precision AI agents.",
+    "datePublished": "2026-03-15",
+    "articleSection": "Intersections",
+    "mainEntityOfPage": "https://nayanwadhwa.com/writing/quant-ai-convergence.html",
+    "author": { "@type": "Person", "name": "Nayan Wadhwa", "url": "https://nayanwadhwa.com/" },
+    "publisher": { "@type": "Person", "name": "Nayan Wadhwa", "url": "https://nayanwadhwa.com/" }
+  }
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-logo" viewBox="120 126 272 240"><path fill="currentColor" d="M140 350V205c0-53 55-63 116-63s116 10 116 63v145h-76V205c0-17-18-25-40-25s-40 8-40 25v145z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a7 7 0 0 0 10.7 10.7z"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="nav" data-nav>
+    <nav class="nav__pill" aria-label="Primary">
+      <a class="nav__logo" href="../" aria-label="Nayan Wadhwa, home">
+        <svg aria-hidden="true"><use href="#i-logo"/></svg>
+      </a>
+      <ul class="nav__links">
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#work">Work</a></li>
+        <li><a class="is-active" href="../#writing" aria-current="true">Writing</a></li>
+        <li><a href="../#contact">Contact</a></li>
+      </ul>
+      <button class="nav__theme" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme">
+        <svg class="i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main" class="article">
+    <a class="back" href="../#writing" data-enter style="--i:0"><svg aria-hidden="true"><use href="#i-back"/></svg>All writing</a>
+
+    <header>
+      <p class="article__meta" data-enter style="--i:1"><b>Intersections</b><time datetime="2026-03-15">March 15, 2026</time><span>3 min read</span></p>
+      <h1 class="article__title" data-enter style="--i:2">Financial Engineering Meets Applied AI: The Modern Stack</h1>
+      <p class="article__dek" data-enter style="--i:3">Why the rigorous mathematical mindset of quantitative derivatives and options modeling translates perfectly to engineering high-precision AI agents.</p>
+    </header>
+
+    <article class="prose">
+      <h2>A Common Language: Expected Value &amp; Probabilities</h2>
+      <p>On the surface, pricing an exotic barrier option and routing a call query to a specific LLM agent seem like entirely distinct disciplines. In reality, both fields share an identical foundation: probability theory, optimization under constraints, and statistical verification.</p>
+      <h3>Option Pricing as a Tree</h3>
+      <p>When we construct binomial options trees, we model pricing and payouts across multiple branches where each step represents a state transition under risk-neutral probabilities.</p>
+      <p>Similarly, an AI agent’s reasoning trajectory can be mapped as a <strong>Tree of Thoughts</strong>:</p>
+      <ul>
+        <li>Nodes represent intermediate reasoning states.</li>
+        <li>Weights represent probability scores on output correctness.</li>
+        <li>Edge transitions choose the path that maximizes expected value.</li>
+      </ul>
+      <p>Modern engineering lies at this intersection. Whether modeling implied volatility skews or programming robust agent networks at Ideabro AI, we use numbers, constraints, and statistical rigs to transform uncertain inputs into highly predictable outcomes.</p>
+    </article>
+
+    <aside class="byline" data-reveal aria-label="About the author">
+      <div>
+        <b>Nayan Wadhwa, CFA</b>
+        <span>Quant researcher and founder of Ideabro AI. Delhi / Gurugram, India.</span>
+      </div>
+      <a class="btn btn--primary" href="../#contact">Get in touch <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </aside>
+
+    <section class="more" aria-labelledby="more-title">
+      <h2 id="more-title">Keep reading</h2>
+      <div class="posts">
+        <article class="post" data-reveal style="--i:0">
+          <p class="post__meta"><b>Quantitative Finance</b><time datetime="2026-05-20">May 20, 2026</time><span>5 min read</span></p>
+          <div>
+            <h3><a href="derivatives-vol-surface.html">Understanding Implied Volatility Surfaces &amp; Smile Curvatures</a></h3>
+          </div>
+          <span class="post__go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+        </article>
+        <article class="post" data-reveal style="--i:1">
+          <p class="post__meta"><b>Applied AI</b><time datetime="2026-04-18">April 18, 2026</time><span>4 min read</span></p>
+          <div>
+            <h3><a href="agentic-ai-operations.html">Designing Multi-Agent Networks for Enterprise Workflow Automation</a></h3>
+          </div>
+          <span class="post__go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <a class="footer__brand" href="../"><svg aria-hidden="true"><use href="#i-logo"/></svg>Nayan Wadhwa</a>
+        <ul class="footer__links">
+          <li><a href="../#about">About</a></li>
+          <li><a href="../#work">Work</a></li>
+          <li><a href="../#writing">Writing</a></li>
+          <li><a href="../#contact">Contact</a></li>
+          <li><a href="#main">Back to top</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Nayan Wadhwa. Delhi / Gurugram, India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

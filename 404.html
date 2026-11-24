@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Page not found | Nayan Wadhwa</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fafafa">
+  <!-- Root-relative paths: this page can be served from any URL depth. -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>
+    (function (d) {
+      var r = d.documentElement;
+      r.classList.add('js');
+      try {
+        var t = localStorage.getItem('nw-theme');
+        if (t === 'dark' || t === 'light') r.setAttribute('data-theme', t);
+      } catch (e) {}
+      setTimeout(function () {
+        if (!r.classList.contains('is-ready')) r.classList.add('is-ready', 'no-motion');
+      }, 3000);
+    })(document);
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-logo" viewBox="120 126 272 240"><path fill="currentColor" d="M140 350V205c0-53 55-63 116-63s116 10 116 63v145h-76V205c0-17-18-25-40-25s-40 8-40 25v145z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a7 7 0 0 0 10.7 10.7z"/></symbol>
+  </svg>
+
+  <header class="nav" data-nav>
+    <nav class="nav__pill" aria-label="Primary">
+      <a class="nav__logo" href="/" aria-label="Nayan Wadhwa, home">
+        <svg aria-hidden="true"><use href="#i-logo"/></svg>
+      </a>
+      <ul class="nav__links">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#writing">Writing</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <button class="nav__theme" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme">
+        <svg class="i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main class="lost" id="main">
+    <div>
+      <p class="eyebrow" data-enter style="--i:0">Error 404</p>
+      <h1 class="display" data-enter style="--i:1">Out of the money.</h1>
+      <p data-enter style="--i:2">This page expired worthless, or never existed. The rest of the site is still trading.</p>
+      <a class="btn btn--primary" href="/" data-enter style="--i:3">Back to the start <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </main>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
